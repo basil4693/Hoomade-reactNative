@@ -22,6 +22,9 @@ const OrderCard = ({ foodId, name, imgUrl, quantity, price,time }) => {
         <View className="pl-4 space-y-4 ">
       <Text className=" font-gilroySemiBold text-xl">{name}</Text>
       <Text className="text-sm font-interRegular text-gray-500">{formatDateTime(time)}</Text>
+        <View className="bg-seaGreen rounded-md items-center justify-between p-2">
+          <Text>write a review</Text> 
+          </View>
         </View>
         <Text className="text-xl font-gilroySemiBold text-seaGreen right-2
         ">RS {price}.00</Text>
